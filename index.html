@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ACUARIOITA</title>
+      <title>REST</title>
 
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,253 +15,183 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-      <!-- Importacion de api de google mps -->
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6QOBU7lem_BMZyfMlGsfQUEg8j9XZpT8&callback=initMap" type="text/javascript"></script>
-      </script>
       <style>
-        #titulo{
+      .fondo{
+            background-color:#303240;
+          }
+      #barra1{
+            background-image: url("images/peces.jpg");
+          }
+      #titulo{
+            font-weight: bold;
+            color:#F7F9FF;
+            font-size:63px;
+          }
+      #cuerpo{
+          background-color:#474C67;
+      }
+      #subtitulos{
           font-weight: bold;
-          color:#F7F9FF;
-          font-size:60px;
-        }
-
-        #subtitulos{
-          font-weight: bold;
-          color:#26539D;
+          color:#FFFFFF;
           font-size:40px;
         }
-
-        #barra1{
-          background-image: url("https://cdn.pixabay.com/photo/2012/03/03/23/54/animal-21668_1280.jpg");
+      #subtitulos2{
+          font-weight: bold;
+          color:#BA945A;
+          font-size:30px;
         }
-
-        .fondo{
-          background-color:#393B43;
+      #subtitulos3{
+          font-weight: bold;
+          color:#BA945A;
+          font-size:20px;
         }
-
-        #barra2{
-          background-color:#FFFFFF;
+      #subtitulos4{
+          font-weight: bold;
+          color:#303240;
+          font-size:20px;
         }
+    </style>
 
-        #cuerpo{
-          background-color:#F7F9FF;
-        }
-
-        #cuadro{
-          border:solid;
-          border-color: #5592C1;
-        }
-
-        #fooder{
-          color:#FFFFFF;
-          background-image: url("https://cdn.pixabay.com/photo/2012/03/03/23/54/animal-21668_1280.jpg");
-        }
-
-      </style>
   </head>
-
   <body class="fondo">
-          <div class="container" id="barra1">
-              <!-- 1.-fila del titulo-->
-              <h2 id="titulo">ACUARIO ITALO</h2>
-              <br>
-              <br>
-              <!-- 2.-fila  para la barra de menu utilizando boostrap3-->
-              <div class="row" id="barra2" >
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <a class="navbar-brand" href="#">UTC</a>
-                      </div>
-                      <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">INICIO</a></li>
-                        <li><a href="#">ESPECIES</a></li>
-                        <li><a href="#">EVENTOS</a></li>
-                        <li><a href="#">CONTACTOS</a></li>
-                      </ul>
-                    </div>
-                </nav>
+    <div class="container" id="barra1">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 id="titulo"><img src="images/logot.webp" height="130px">ACUARIO ITALO</h1>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="container" id="cuerpo" >
+      <!-- ingreso el navbar de boostrap -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php echo site_url(); ?>">INICIO</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="<?php echo site_url(); ?>/menus/desayunos">DESAYUNOS</a></li>
+              <li><a href="<?php echo site_url(); ?>/menus/almuerzos">ALMUERZOS</a></li>
+              <li><a href="<?php echo site_url(); ?>/menus/meriendas">MERIENDAS</a></li>
+              <li><a href="<?php echo site_url(); ?>/menus/cartas">PLATOS A LA MESA</a></li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="container " id="cuerpo">
+      <h1 id="subtitulos" class="text-center"> BIENVENIDO</h1>
+      <hr size="8px" color="black" />
+      <div class="row">
+
+        <div class="col-md-8">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/cap1.webp" height="130px">
               </div>
 
-              <!-- 3.-fila para portada y descripcion-->
-              <div class="row"  id="cuerpo">
-                  <h1 class="text-center" id="subtitulos">
-                     <img src="https://static.vecteezy.com/system/resources/previews/015/736/142/non_2x/stingray-watercolor-clip-art-png.png" alt="Bootstrap" height="150" width="200">
-                     BIENVENIDO...
-                  </h1>
-                  <!-- 3.-Creación de carrucel-->
-                  <div class="col-md-7 text-center ">
-                    <div >
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="3000">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                          </ol>
-
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner">
-                            <div class="item active">
-                              <img src="https://i.mkt.lu/cont/1271218/650/1552/georgia-aquarium.jpg" alt="Los Angeles" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                              <img src="https://images.unsplash.com/photo-1511312255764-c14bac8cb35e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNoaWNvLnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Chicago" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                              <img src="https://images.hola.com/imagenes/viajes/20210512189452/los-acuarios-mas-espectaculares-de-espana-swng/0-951-430/poema-del-mar-t.jpg" alt="New york" style="width:100%;">
-                            </div>
-                          </div>
-
-                          <!-- Left and right controls -->
-                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-5 ">
-                      <br>
-                      <br>
-                      <!-- Comentario del dueño -->
-                        <div class="media">
-                          <div class="media-left media-top">
-                            <img src="https://cdn-icons-png.flaticon.com/512/610/610120.png" class="media-object" style="width:60px">
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">DUEÑO DEL ACUARIO</h3>
-                            <h4>1.- Los horarios del acuario al público son de lunes a viernes de 8:00am-17:00pm</h4>
-                            <h4>2.- Para entrar al acuario debe realizar previamente una reservación en línea.</h4>
-                            <h4>3.- No se permiten niños sin la uspervisión de un adulto</h4>
-                            <h4>4.- No alimente a los animales, esta netamente prohibído.</h4>
-                            <h4>1.- No arrojar basura a los acuarios</h4>
-                          </div>
-                        </div>
-                  </div>
+              <div class="item">
+                <img src="images/cap3.jpg" height="130px">
               </div>
 
-              <!-- 4.-fila para la clase de peces-->
-              <div class="row"  id="cuerpo" >
-                  <br>
-                  <br>
-                  <div class="row"  >
-                    <h2 class="text-center" id="subtitulos"> ESPECIES</h2>
-                  <div class="col-md-3 text-center">
-                    <div class="thumbnail">
-                        <h3>PULPOS</h3>
-                        <img src="https://cdn0.ecologiaverde.com/es/posts/9/3/2/cuantos_tentaculos_tiene_un_pulpo_4239_orig.jpg" alt="Lights" style="width:100%" class="img-circle">
-                        <div class="caption">
-                          <p>Los octópodos ​​ son un orden de moluscos cefalópodos octopodiformes conocidos comúnmente como pulpos. Al igual que otros cefalópodos, el pulpo tiene simetría bilateral, con la boca y el pico situados en el punto central de sus ocho extremidades.</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3 text-center">
-                    <div class="thumbnail">
-                        <h3>PECES</h3>
-                        <img src="https://atlasanimal.com/wp-content/uploads/2021/02/Peces-Domesticos.jpg" alt="Nature" style="width:100%" class="img-circle">
-                        <div class="caption">
-                          <p>Los peces generalmente se definen como vertebrados acuáticos, que utilizan branquias para obtener oxígeno del agua y poseen aletas con un número variable de elementos esqueléticos llamados radios </p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <div class="thumbnail">
-                        <h3>TIBURONES</h3>
-                        <img src="https://avatarenergia.com/wp-content/uploads/2020/12/Caracteristicas-de-los-tiburones.jpg" alt="Fjords" style="width:100%" class="img-circle">
-                        <div class="caption">
-                          <p>Los tiburones son un conjunto de peces cartilaginosos (o sea, sin esqueleto óseo) conocidos popularmente como jaquetones o escualos y científicamente como selaquimorfos o selacimorfos (o sea, pertenecientes al superorden Selachimorfa).</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <div class="thumbnail">
-                        <h3>MANTARRAYAS</h3>
-                        <img src="https://cdn.forbes.com.mx/2023/04/mantarraya.webp" alt="Fjords" style="width:100%" class="img-circle">
-                        <div class="caption">
-                          <p>Las mantas rayas son enormes peces. Sí peces, no son mamíferos como mucha gente cree. Son de la clase de los tiburones (Elasmobranchii) y son las rayas más grandes del océano.</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="item">
+                <img src="images/cap2.webp" height="130px">
               </div>
 
-              <!-- 5.-fila para la ubicación-->
-              <div class="row"  id="cuerpo" >
-                  <div class="col-md-2">
-
-                  </div>
-                  <div class="col-md-8  text-center">
-                      <br>
-                    <h2 id="subtitulos">QUITO</h2>
-                    <div id="mapaDireccion" style="width:100%; height:500px;"></div>
-                  </div>
-                  <div class="col-md-2">
-
-                  </div>
-              </div>
-              <div class="row"  id="cuerpo" >
-                  <div class="col-md-2">
-
-                  </div>
-                  <div class="col-md-8  text-center">
-                      <br>
-                    <h2 id="subtitulos">LATACUNGA</h2>
-                    <div id="mapaDireccion2" style="width:100%; height:500px;"></div>
-                  </div>
-                  <div class="col-md-2">
-
-                  </div>
-              </div>
-              <!--fila para el fooder-->
-              <div class="row"  id="fooder">
-                  <div class="col-md-12 text-center">
-                    <h2>CONTACTANOS</h2>
-                    <h5>Telefono:0995253137</h5>
-                    <h5>Correo:italo.ante5802@gmail.com</h5>
-                    <h5>Codigo postal:5802</h5>
-                    <h5>VISITANOS DE NUEVO</h5>
-                    <h5>ACUARIO ITALO</h5>
-                  </div>
+              <div class="item">
+                <img src="images/cap4.jpg" height="130px">
               </div>
             </div>
-        </div>
-        <script type="text/javascript">
-          function initMap (){
-            // Creando el punto central del map
-            var coordenadaCentral=new google.maps.LatLng(-0.8526273779449223, -78.68291860729275);
-            var coordenadaCentral2=new google.maps.LatLng(-0.8526273779449223, -78.68291860729275);
-            // Creando mapa
-            var mapa1=new google.maps.Map(document.getElementById('mapaDireccion'),
-               {
-                 // FORMATO JEISO
-                 center:coordenadaCentral,
-                 zoom:15,
-                 mapType:google.maps.MapTypeId.ROADMAP
-               }
-             );
-             var mapa2=new google.maps.Map(document.getElementById('mapaDireccion2'),
-                {
-                  // FORMATO JEISO
-                  center:coordenadaCentral2,
-                  zoom:15,
-                  mapType:google.maps.MapTypeId.ROADMAP
-                }
-              );
-          }
-       </script>
 
-  </body>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <br>
+          <br>
+          <<div class="panel panel-warning">
+            <div class="panel-heading" id="subtitulos2">MISION</div>
+            <div class="panel-body">
+              “Brindar alimentos de alta calidad en un ambiente familiar y cálido."
+              “Ser una empresa líder en el servicio de comida rápida a nivel nacional, manteniendo altos estándares de calidad a nuestros clientes, cuidando el talento humano y relación con proveedores.”
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr size="8px" color="black" />
+      <!-- 5.-fila para la ubicación-->
+
+      <div class="container">
+         <div class="col-md-5">
+          <h2 id="subtitulos">Quito</h2>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.42317325307!2d-78.5197574891602!3d-0.15931449999998942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc8a676492b%3A0x331d26d661b2cbf5!2sAcuario%20Aventura%20Acuatica%20El%20Inca!5e0!3m2!1ses!2sec!4v1683605853927!5m2!1ses!2sec" width="100%" height="450px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
+         </div>
+          <div class="col-md-2 text-center">
+
+          </div>
+          <div class="col-md-5">
+            <h2 id="subtitulos">Latacunga</h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.42317325307!2d-78.5197574891602!3d-0.15931449999998942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc8a676492b%3A0x331d26d661b2cbf5!2sAcuario%20Aventura%20Acuatica%20El%20Inca!5e0!3m2!1ses!2sec!4v1683605853927!5m2!1ses!2sec" width="100%" height="450px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+         </div>
+      </div>
+
+    </div>
+
+    <div class="container" id="barra1">
+    <div class="row text-center" style="background-color:#272727;color:#FFFFFF;" >
+      <div class="col-md-6 ">
+        <h4>SUPER ACUARIO ITA &copy</h4>
+        <hr size="8px" color="black" />
+        <h5>Creado para brindar alegria a las amadas perosnas de la provincia de cotopaxi </h5>
+        <h5>2023-2024</h5>
+        <h5>Utecino</h5>
+
+      </div>
+      <div class="col-md-6 ">
+        <h5>Ubicacion</h5>
+        <h5>C. del Príncipe de Vergara, 78, 28006 Madrid</h5>
+        <h5>Contacto:0995253137</h5>
+        <h5>Gmail:utc.gob.ec</h5>
+      </div>
+    </div>
+
+</div>
+
+</body>
 </html>
