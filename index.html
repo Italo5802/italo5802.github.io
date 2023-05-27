@@ -4,7 +4,7 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>REST</title>
+      <title>ACUITA</title>
 
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -60,6 +60,10 @@
             background-color:#0D0C24;
         }
 
+      #experi{
+        background-color: #303240;
+      }
+
     </style>
 
   </head>
@@ -91,9 +95,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a id="letmenu"  href="index.html">ESPECIES</a></li>
-              <li><a id="letmenu" href="<?php echo site_url(); ?>/menus/almuerzos">HABITADS</a></li>
-              <li><a id="letmenu" href="<?php echo site_url(); ?>/menus/meriendas">EXPERIENCIAS</a></li>
+              <li><a id="letmenu"  href="especies.html">ESPECIES</a></li>
+              <li><a id="letmenu" href="habitads.html">HABITADS</a></li>
+              <li><a id="letmenu" href="eventos.html">EVENTOS</a></li>
               <li><a id="letmenu" href="ubicacion.html">UBICACIÓN</a></li>
             </ul>
 
@@ -103,7 +107,7 @@
     </div>
 
     <div class="container " id="cuerpo">
-      <h1 id="subtitulos" class="text-center"> BIENVENIDO</h1>
+      <h1 id="subtitulos" > BIENVENIDO</h1>
       <hr size="8px" color="black" />
       <div class="row">
 
@@ -150,19 +154,135 @@
         <div class="col-md-4">
           <br>
           <br>
-          <<div class="panel panel-default ">
-            <div class="panel-heading" id="subtitulos2">MISION</div>
+          <div class="panel panel-default ">
+            <div class="panel-heading" id="subtitulos2">HORARIOS Y TARIFAS</div>
+            <br>
+            <div class="row">
+              <div class=" col-md-12  ">
+                <p>&nbspDe martes a domingo&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9:00AM - 16:00PM</p>
+                <p>&nbspFeriados&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9:00AM - 16:00PM</p>
+                <br>
+                <p>&nbspAdultos&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$7</p>
+                <p>&nbspNiños&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$5</p>
+                <p>&nbspTercera edad&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3$</p>
+              </div>
+
+            </div>
+
+            <br>
+            <p class="text-center">&nbspMenores de 3 años y personas con discapacidad no pagan</p>
+          </div>
+
+        </div>
+
+      </div>
+      <hr size="8px" color="black" />
+      <!-- 5.-fila para la ubicación-->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/mision.jpg" alt="" height="80px" class="img-responsive">
+
+        </div>
+        <div class="col-md-3">
+          <br>
+          <div class="panel panel-default ">
+            <div class="panel-heading" id="subtitulos2">OBJETIVO</div>
             <div class="panel-body">
               “Brindar alimentos de alta calidad en un ambiente familiar y cálido."
               “Ser una empresa líder en el servicio de comida rápida a nivel nacional, manteniendo altos estándares de calidad a nuestros clientes, cuidando el talento humano y relación con proveedores.”
 
             </div>
           </div>
+
+        </div>
+        <div class="col-md-3">
+          <br>
+          <p id="letmenu">PROGRESO</p>
+          <p id="letmenu">Confiabilidad</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="200" style="width:100%">
+              100% Completado
+            </div>
+          </div>
+          <p id="letmenu">Aumento de especies</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="200" style="width:90%">
+              90% Completado
+            </div>
+          </div>
+          <p id="letmenu">Expansion de habitads</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="200" style="width:80%">
+              80% Completado
+            </div>
+          </div>
+
+        </div>
+
+
+        </div>
+        <!-- fin de fila de mision -->
+        <hr size="8px" color="black" />
+        <!-- 5.-fila para la vision-->
+        <h1 id="subtitulos" > EXPERIENCIAS DE CLIENTES</h1>
+        <div class="row" style="color:#FFFFFF;" >
+            <div class="col-md-6">
+              <br>
+              <!-- Left-aligned -->
+              <div class="media " id="experi">
+                <div class="media-left">
+                  <img src="images/user1.jpg" class="media-object" style="width:130px">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Alejandra Ordoñez</h4>
+                  <p>El cuidado de los animales marinos es simplemente impresioante</p>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+              <br>
+              <!-- Left-aligned -->
+              <div class="media" id="experi">
+                <div class="media-left">
+                  <img src="images/user2.png" class="media-object" style="width:130px">
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Carla Cajas</h4>
+                  <p>La atención a los usuairos es perfecta y adecuada desde el momento que entras al acuario.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row" style="color:#FFFFFF;" >
+              <div class="col-md-6">
+                <!-- Left-aligned -->
+                <br>
+                <div class="media" id="experi">
+                  <div class="media-left">
+                    <img src="images/user3.jpg" class="media-object" style="width:130px">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">John Doe</h4>
+                    <p>Los horaios de atención son los mas adecuados ya que priorizan el tiempo libre de sus clientes</p>
+                  </div>
+
+                </div>
+                <br>
+                <br>
+
+            </div>
+        </div>
         </div>
 
       </div>
-      <hr size="8px" color="black" />
-      <!-- 5.-fila para la ubicación-->
     </div>
 
     <div class="container" id="barra1">
